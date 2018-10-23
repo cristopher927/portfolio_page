@@ -1,0 +1,273 @@
+html { 
+  background: url(../pics/laptop.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+body {
+	font-family: 'Fahkwang', sans-serif;
+}
+
+main {
+	position: relative;
+	top: 0px;
+	margin-bottom: 0;
+}
+
+footer {
+	background-color: #006400;
+	color: white;
+	padding: 5px;
+	position: fixed;
+	width: 100%;	
+	left: 0;
+	bottom:0;
+	z-index: 1;
+}
+
+footer p, footer audio {
+	display: inline;
+	float: right;
+	padding: 0 5px;
+}
+
+#contact {
+	 background-color: rgba(255, 255, 204, 0.7); 
+	 border-radius: 30px;
+	display: block;
+	transform: translate(0, 200px);
+	padding: 30px;
+	margin: 0 30px 225px 30px;
+	position: relative;
+}
+
+.contact-div {
+	text-align: center;
+	margin: 45px 0;
+}
+
+.contact-div h1 {
+	margin: 45px 0;
+	font-family: 'Righteous', cursive;
+	font-size: 33px;
+	color: rgba(39, 225, 20, 1);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 1px 0px 0px #3dc21b;
+	-webkit-box-shadow: 0px 1px 0px 0px #3dc21b;
+	box-shadow: 0px 1px 0px 0px #3dc21b;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+	background:-moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+	background-color:#44c767;
+	-moz-border-radius:29px;
+	-webkit-border-radius:29px;
+	border-radius:29px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:25px;
+	font-weight:bold;
+	padding:21px 38px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	width:178px;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+	background:-moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.some-heading {
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align: center;
+}
+
+#projects {
+    background-color: #006400;
+    background-image: linear-gradient(to bottom, rgba(0, 133, 20, 1), rgba(39, 225, 20, 1));
+    color: white;
+    transform: translate(0, 45%);
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 110px;
+}
+
+#projects h1 {
+    text-align: center;
+}
+
+.project-tile {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.project-tile:hover {
+    border:3px solid blue;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+#about-me {
+    position: relative;
+    top: 25px;
+    margin: 0 30px 5px 30px;
+    /*height: 580px;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#welcome-section {
+	background-image: url(../pics/laptop2.jpeg); 
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+
+	background-color: black;
+    top: 0;
+    /*height: 580px;*/
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+#welcome-section h1, #welcome-section h3 {
+	color: white;
+	transform: translate(0, 125px);
+	font-family: 'Oleo Script', cursive;
+	font-size: 32px;
+	text-shadow: 1px 1px 22px black, 0 0 25px blue, 0 0 25px darkblue;
+}
+
+.first-div-about-me {
+    background-color: rgba(255, 255, 204, 0.7); 
+    border-radius: 30px;
+    padding: 20px;
+    display: block; 
+    margin-top: 70px;
+    /*height: 110%;
+    width: 25%;*/
+}
+
+.second-div-about-me {
+    background-color: rgba(255, 255, 204, 0.7); 
+    border-radius: 30px;
+    padding: 20px;
+    display: block;
+    margin-left: 30px;
+    margin-top: 70px;
+    /*width: 25%;
+    height: 110%;*/
+}
+
+.third-div-about-me {
+    background-color: rgba(255, 255, 204, 0.7); 
+    border-radius: 30px;
+    padding: 20px;
+    display: block;
+    margin-left: 30px;
+    margin-top: 70px;
+    /*width: 25%;
+    height: 110%;*/
+}
+
+#navbar {
+	background-color: #006400;
+	color: white;
+	padding: 20px;
+	position: fixed;
+	width: 100%;	
+	left: 0;
+	top: 0;
+	z-index: 1;
+	height: 3%;
+}
+
+.navbar-link {
+	border:1px solid white;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	margin: 0 10px;
+	padding: 10px 18px;
+	text-decoration: none;
+}
+
+.navbar-link:hover {
+	color: #006400;
+	background-color: white;
+}
+
+.uk-link:hover {
+	border:2px solid blue;
+}
+
+.ro-link {
+	border:2px solid blue;
+}
+
+.lang {
+	text-align: right;
+	margin-right: 30px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+
+.lang p, .uk-link, .ro-link {
+	display: inline;
+}
+
+
+@media only screen and (max-width: 480px) {
+  #about-me {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #navbar a {
+  	margin: 0;
+  	font-size: 10px;
+  	float: left;
+  }
+  
+  .second-div-about-me,
+  .third-div-about-me {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  #contact {
+  	transform: translate(0, 300px);
+  	-ms-transform: translate(0, 300px); 
+    -webkit-transform: translate(0, 300px);
+}
+

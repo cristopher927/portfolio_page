@@ -4,61 +4,167 @@
 		<title>My portfolio webpage</title>
 
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
 	</head>
 
 	<body>
 
 		<nav id="navbar">
-			<a href="#">About me</a>
-			<a href="#projects">My work</a>
-			<a href="#contact">Contact</a>
+
+			<a href="#about-me" class="navbar-link">About me</a>
+			<a href="#projects" class="navbar-link">My work</a>
+			<a href="#contact" class="navbar-link">Contact</a>
+
+			<div class="lang">
+				<p>Language / Limbă: </p>
+
+				<a href='#'><img src="pics/eng.jpg" alt="uk flag" width="25px" title="English" class="uk-link"></a>
+				<a href='ro-version/index.html'><img src="pics/ro-flag.png" alt="ro flag" width="25px" title="Română" class="ro-link"></a>
+			</div>
+
 		</nav>
 
-		<main>
+
 			<section id="welcome-section">
-
-				<div class="first-div-welcome-section">
-					<img src="pics/me.jpg" alt="mypic" width="230px" height="290px">
-
-					<h1>Hi. I'm Cristian Antonescu.</h1>
-					
-					<p><i class="fa fa-briefcase"></i> Front-end web developer</p>
-					<p><i class="fa fa-home"></i> Romania, Marasesti</p>
-					<p><i class="fa fa-envelope"></i> cristian_antonescu1992@yahoo.com</p>
-				    <p><i class="fa fa-phone"></i> +40752268662</p>
-				</div>
-
-				<div class="second-div-welcome-section">
-					<h3><i class="fa fa-drivers-license" style="font-size:24px"></i> Skills:</h3>
-
-					<ul>
-						<li>JavaScript</li>
-						<li>CSS3</li>
-						<li>HTML5</li>
-						<li>jQuery</li>
-						<li>Never ending ambition</li>
-					</ul>
-
-					<h3><i class="fa fa-anchor" style="font-size:24px"></i> My Journey:</h3>
-
-					<p>I began my web development journey mostly as a self-taught who has been learning the basics of HTML and CSS from <a href="http://w3schools.com">w3schools</a> and <a href="http://freecodecamp.com">freeCodeCamp</a> . I also participated in a online course where I improved a lot my web development skills, entering the wonderful realm of JavaScript.</p>
-					<p>What motivated me? My main motivation was and still is to create useful and well-designed webpages and apps which can improve and entertain peoples' lives, although I have to admit that I started to learn HTML not having any idea about how much beauty and addiction it can bring into my life. It was more like "Well I have some working neurons in my head, what can I do with them? Let's try programming and see where it goes!"</p>
-
-				</div>
-
+				<h1> Hi. I'm Cristian Antonescu.</h1>
+				<h3>I preffer my coding diversified and responsive.</h3>
+				<h3>Welcome.</h3>
 			</section>
 
-			<section id="projects">
-				<div class="project-tile"></div>
-			</section>
+		<main>
+
+			<section id="about-me">
+
+            <div class="first-div-about-me">
+                <img src="pics/me.jpg" alt="mypic" width="230px" height="290px">
+
+                <p><i class="fa fa-briefcase"></i> Web developer</p>
+                <p><i class="fa fa-home"></i> Romania, Marasesti city</p>
+                <p><i class="fa fa-envelope"></i> cristian_antonescu1992@yahoo.com</p>
+
+            </div>
+
+            <div class="second-div-about-me">
+                <h3><i class="fa fa-drivers-license" style="font-size:24px"></i> Skills:</h3>
+
+                <ul>
+                    <li>JavaScript</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                    <li>jQuery</li>
+                    <li>Never ending ambition</li>
+                </ul>
+
+                <h3><i class="fa fa-anchor" style="font-size:24px"></i> My Journey:</h3>
+
+                <p>I began my web development journey mostly as a self-taught <br>
+                 who has been learning the basics of HTML and CSS <br>
+                  from <a href="http://w3schools.com">w3schools</a> and <a href="http://freecodecamp.com">freeCodeCamp</a> . I also participated <br>
+                   in a online course where I improved a lot <br>
+                    my web development skills, entering the wonderful <br>
+                     realm of JavaScript and being trained <br>
+                     by a professional programmer.<br>
+                What motivated me? My main motivation <br>
+                was and still is to create useful and <br>
+               well-designed webpages and apps which can <br>
+            improve and entertain peoples' lives, although <br>
+             I have to admit that I started to learn HTML <br>
+              not having any idea about how much beauty <br>
+              and addiction programming can bring into my life. <br>
+              It was more like "Well I have some working <br>
+              neurons in my head, what can I do with them? <br>
+              Let's try programming and see where it goes!"</p>
+
+            </div>
+
+            <div class="third-div-about-me">
+                <h3><i class="fa fa-graduation-cap" style="font-size:24px"></i> Education:</h3>
+
+                <h5 class="w3-opacity"><b>Front End Developer / w3schools.com:</b></h5>
+               <p class="w3-text-teal"><i class="fa fa-calendar"></i> Jan 2017 - <span>Current</span></p>
+
+               <p>There's a never ending phase <br> when it comes to learning <br>
+                programming! I'm always eager <br>
+               to improve my skills!</p>
+
+               <h5 class="w3-opacity"><b>Front End Developer / freeCodeCamp.com:</b></h5>
+               <p class="w3-text-teal"><i class="fa fa-calendar"></i> Feb 2017 - <span>Current</span></p>
+
+               <p>I've done a lot of the <br> demanded projects and exercises <br> available on freeCodeCamp!</p>
+
+            </div>
+
+        </section>
+
+        <section id="projects">
+
+            <h1 class="some-heading">Check out some of my work:</h1>
+
+                <a href="https://github.com/cristopher927/motivational-web-app" class="project-tile" target="_blank">
+
+                        <img src="pics/quote-generator.jpg" alt="quote generator app pic" width="180px" height="155px" title="Here you will find some of the most inspiring and motivational quotes ever said, all in a beautiful quote generator app!"><br><h3>Motivational quote <br>generator app</h3>
+
+                </a>
+
+                <a href="https://github.com/cristopher927/technical-documentation-page-about-JavaScript" class="project-tile" target="_blank" title="A pretty well designed webpage that teaches the user a few basics about JavaScript">
+
+                        <img src="pics/documentation_page.png" alt="documentation page pic" width="250px" height="155px"><br><h3>Documentation page <br> about JavaScript</h3>
+
+                </a>
+
+                <a href="https://github.com/cristopher927/tribute-page-to-Max-Tegmark" class="project-tile" target="_blank" title="A tribute page to the great cosmologist Max Tegmark">
+
+                        <img src="pics/tegmark.png" alt="tribute-page-to-Max-Tegmark pic" width="250px" height="155px"><br><h3>Tribute page <br> to Max Tegmark</h3>
+
+                </a>
+
+                <a href="https://github.com/cristopher927/Survey-about-the-web" class="project-tile" target="_blank" title="A survey with lots of form elements, input types and other interesting stuff">
+
+                        <img src="pics/web.png" alt="Survey about the web pic" width="250px" height="155px"><br><h3>Survey about the web</h3>
+
+                </a>
+                
+
+
+        </section>
+
+        		<br><br><br><br><br><br><br><br><br><br>
 
 			<section id="contact">
-				
+
+				<h1 class="some-heading">How about we work together? Find me at:</h1>
+
+				<div class="contact-div">
+					<a href="https://github.com/cristopher927" id="profile-link" target="_blank">GitHub</a> 
+
+					<a href="https://www.freecodecamp.org/cristopher927" class="myButton" target="_blank">freeCodeCamp</a>
+
+					<h1>email: cristian_antonescu1992@yahoo.com</h1>
+
+				</div>
+
+
+
 			</section>
+
+			<br><br><br><br>
+
 		</main>
+
+		<footer>
+			
+				<audio controls autoplay>
+					<source src="music/Halls_of_Valhalla.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+
+				<p>Now Playing: <strong>"Halls of Valhalla"</strong> by <strong>Judas Priest</strong></p>
+				
+		</footer>
 
 	</body>
 
