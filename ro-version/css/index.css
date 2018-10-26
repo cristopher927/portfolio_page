@@ -13,21 +13,18 @@ main {
 	margin-bottom: 0;
 }
 
-footer {
-	background-color: #006400;
-	color: white;
-	padding: 5px;
-	position: fixed;
-	width: 100%;	
-	left: 0;
-	bottom:0;
-	z-index: 1;
+form {
+	margin-top: 75px;
 }
 
-footer p, footer audio {
-	display: inline;
-	float: right;
-	padding: 0 5px;
+form textarea:focus {
+	background-color: lightblue;
+	border:1px solid blue;
+}
+
+form input:focus {
+	background-color: lightblue;
+	border:1px solid blue;
 }
 
 #contact {
@@ -36,22 +33,15 @@ footer p, footer audio {
 	display: block;
 	transform: translate(0, 200px);
 	padding: 30px;
-	margin: 0 30px 225px 30px;
+	margin: 50px 30px 225px 30px;
 	position: relative;
 }
 
 .contact-div {
 	text-align: center;
-	margin: 45px 0;
+	margin: 60px 0;
 }
 
-.contact-div h1 {
-	margin: 45px 0;
-	font-family: 'Righteous', cursive;
-	font-size: 33px;
-	color: rgba(39, 225, 20, 1);
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
 
 .myButton {
 	-moz-box-shadow: 0px 1px 0px 0px #3dc21b;
@@ -95,6 +85,49 @@ footer p, footer audio {
 	top:1px;
 }
 
+#profile-link {
+	-moz-box-shadow: 0px 1px 0px 0px #3dc21b;
+	-webkit-box-shadow: 0px 1px 0px 0px #3dc21b;
+	box-shadow: 0px 1px 0px 0px #3dc21b;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+	background:-moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+	background-color:#44c767;
+	-moz-border-radius:29px;
+	-webkit-border-radius:29px;
+	border-radius:29px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:25px;
+	font-weight:bold;
+	padding:21px 38px;
+	text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	width:178px;
+}
+
+#profile-link:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+	background:-moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
+	background-color:#5cbf2a;
+}
+#profile-link:active {
+	position:relative;
+	top:1px;
+}
+
 .some-heading {
 	color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -110,6 +143,7 @@ footer p, footer audio {
     display: inline-block;
     width: 100%;
     margin-top: 110px;
+    margin-bottom: 65px;
 }
 
 #projects h1 {
@@ -117,19 +151,55 @@ footer p, footer audio {
 }
 
 .project-tile {
-    display: block;
-    float: left;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-left: 25px;
+	display: inline-block;
+	width: 320px;
 }
 
-.project-tile:hover {
-    border:3px solid blue;
-    background-color: blue;
-    color: white;
-    text-decoration: none;
+.margin-div {
+	margin: 40px 0;
+}
+
+.container-project {
+  position: relative;
+  width: 70%;
+}
+
+.image-project {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-project:hover {
+	border:2px solid blue;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container-project:hover .overlay {
+  	height: 40%;
+}
+
+.text-overlayed {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #about-me {
@@ -156,10 +226,40 @@ footer p, footer audio {
     /*height: 580px;*/
     width: 100%;
     text-align: center;
-    display: block;
+    
 }
 
-#welcome-section h1, #welcome-section h3 {
+.hello-heading {
+	color: white;
+	transform: translate(0, 125px);
+	font-family: 'Oleo Script', cursive;
+	font-size: 32px;
+	text-shadow: 1px 1px 22px black, 0 0 25px blue, 0 0 25px darkblue;
+}
+
+.coding-heading {
+	color: white;
+	transform: translate(999px, 125px);
+	font-family: 'Oleo Script', cursive;
+	font-size: 32px;
+	text-shadow: 1px 1px 22px black, 0 0 25px blue, 0 0 25px darkblue;
+	animation-name: coding;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 4s;
+}
+
+@keyframes coding {
+	from {
+		transform: translate(999px, 125px);
+	}
+
+	to {
+		transform:translate(0, 125px);
+	}
+}
+
+.welcome-heading {
 	color: white;
 	transform: translate(0, 125px);
 	font-family: 'Oleo Script', cursive;
@@ -244,6 +344,13 @@ footer p, footer audio {
 
 .lang p, .uk-link, .ro-link {
 	display: inline;
+}
+
+.mail-link {
+	color: #44c767;
+	font-size: 30px;
+	margin: 50px 0;
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 

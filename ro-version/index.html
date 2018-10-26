@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<title>Paginea mea de portofoliu</title>
+    
+    <meta charset="utf-8"/>
+		<title>Pagina mea de portofoliu</title>
 
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
+
 		<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
@@ -20,19 +28,18 @@
 			<a href="#contact" class="navbar-link">Contactează-mă</a>
 
 			<div class="lang">
-				<p>Language / Limbă: </p>
+				<p>Language / Limbă: </p> <br>
 
 				<a href='../index.html'><img src="pics/eng.jpg" alt="uk flag" width="25px" title="English" class="uk-link"></a>
-				<a href='index.html'><img src="pics/ro-flag.png" alt="ro flag" width="25px" title="Română" class="ro-link"></a>
+				<a href='/index.html'><img src="pics/ro-flag.png" alt="ro flag" width="25px" title="Română" class="ro-link"></a>
 			</div>
 
 		</nav>
 
-
 			<section id="welcome-section">
-				<h1>Salut. Mă numesc Cristian Antonescu.</h1>
-        <h3>Îmi prefer codul diversificat și responsive.</h3>
-				<h3>Bine ai venit.</h3>
+				<h1 class="hello-heading"> Salut. Eu sunt Cristian Antonescu.</h1>
+				<h3 class="coding-heading">Îmi prefer codul diversificat și responsivee.</h3>
+				<h3 class="welcome-heading">Bun venit.</h3>
 			</section>
 
 		<main>
@@ -43,13 +50,13 @@
                 <img src="pics/me.jpg" alt="mypic" width="230px" height="290px">
 
                 <p><i class="fa fa-briefcase"></i> Web developer</p>
-                <p><i class="fa fa-home"></i> România, oraș Mărășești</p>
+                <p><i class="fa fa-home"></i> Romania, oraș Mărășești</p>
                 <p><i class="fa fa-envelope"></i> cristian_antonescu1992@yahoo.com</p>
 
             </div>
 
             <div class="second-div-about-me">
-                <h3><i class="fa fa-drivers-license" style="font-size:24px"></i> Aptitudini:</h3>
+                <h3><i class="fa fa-drivers-license" style="font-size:24px"></i> Abilități:</h3>
 
                 <ul>
                     <li>JavaScript</li>
@@ -61,7 +68,7 @@
 
                 <h3><i class="fa fa-anchor" style="font-size:24px"></i> Călătoria mea:</h3>
 
-                <p>Mi-am început călătoria de web developer ca autodidact<br>
+                 <p>Mi-am început călătoria de web developer ca autodidact<br>
                  care a învățat noțiunile de bază din HTML și CSS<br>
                   de pe <a href="http://w3schools.com">w3schools</a> și <a href="http://freecodecamp.com">freeCodeCamp</a> . Am și participat<br>
                    la un curs online unde mi-am îmbunătățit mult<br>
@@ -85,13 +92,14 @@
                     și să văd unde ajung cu asta!”
                 </p>
 
+
             </div>
 
             <div class="third-div-about-me">
                 <h3><i class="fa fa-graduation-cap" style="font-size:24px"></i> Educație:</h3>
 
-                <h5 class="w3-opacity"><b>Front End Developer / w3schools.com:</b></h5>
-               <p class="w3-text-teal"><i class="fa fa-calendar"></i> Ianuarie 2017 - <span>Prezent</span></p>
+                <h5 class="w3-opacity"><b>Web Developer / w3schools.com:</b></h5>
+               <p class="w3-text-teal"><i class="fa fa-calendar"></i> Jan 2017 - <span>Prezent</span></p>
 
                <p>Nu există o fază finală<br> când vine vorba de a învăța <br>
                 programare! Sunt mereu dornic <br>
@@ -108,52 +116,62 @@
 
         <section id="projects">
 
-            <h1 class="some-heading">Câteva proiecte la care am lucrat:</h1>
+            <h1 class="some-heading">Câteva proiecte realizate de mine:</h1>
 
-                <a href="https://github.com/cristopher927/motivational-web-app" class="project-tile" target="_blank" title="">
+                <a href='https://github.com/cristopher927/motivational-web-app' target='_blank' class="project-tile" title="Aici veți găsi câteva zeci din cele mai motivaționale și interesante citate spuse vreodata, toate într-o aplicație care le poate genera după placul utilizatorului">
+                  <div class="container-project">
+                    <img src="pics/quote-generator.jpg" alt="quote generator" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Motivational quote <br>generator app</div>
+                    </div>
+                  </div>
+                </a> 
 
-                        <img src="pics/quote-generator.jpg" alt="quote generator app pic" width="180px" height="155px"><br><h3>Motivational quote <br>generator app</h3>
-
+               <a href='https://github.com/cristopher927/technical-documentation-page-about-JavaScript' target='_blank' class="project-tile" title="O pagină de documentare cu un design plăcut care te poate învăța noțiuni de bază despre JavaScript">
+                  <div class="container-project">
+                    <img src="pics/documentation_page.png" alt="documentation page pic" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Documentation page <br> about JavaScript</div>
+                    </div>
+                  </div>
                 </a>
 
-                <a href="https://github.com/cristopher927/technical-documentation-page-about-JavaScript" class="project-tile" target="_blank">
-
-                        <img src="pics/documentation_page.png" alt="documentation page pic" width="250px" height="155px"><br><h3>Documentation page <br> about JavaScript</h3>
-
+                <a href='https://github.com/cristopher927/tribute-page-to-Max-Tegmark' target='_blank' class="project-tile" title="O pagină tribut dedicată marelui astrofizician Max Tegmark">
+                  <div class="container-project">
+                    <img src="pics/tegmark.png" alt="tribute-page-to-Max-Tegmark pic" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Tribute page <br> to Max Tegmark</div>
+                    </div>
+                  </div>
                 </a>
 
-                <a href="https://github.com/cristopher927/tribute-page-to-Max-Tegmark" class="project-tile" target="_blank">
-
-                        <img src="pics/tegmark.png" alt="tribute-page-to-Max-Tegmark pic" width="250px" height="155px"><br><h3>Tribute page <br> to Max Tegmark</h3>
-
+                 <a href='https://github.com/cristopher927/Survey-about-the-web' target='_blank' class="project-tile" title="Un sondaj despre utilizarea Internetului">
+                  <div class="container-project">
+                    <img src="pics/web.png" alt="Survey about the web pic" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Survey about the web</div>
+                    </div>
+                  </div>
                 </a>
 
-                <a href="https://github.com/cristopher927/Survey-about-the-web" class="project-tile" target="_blank">
-
-                        <img src="pics/web.png" alt="Survey about the web pic" width="250px" height="155px"><br><h3>Survey about the web</h3>
-
-                </a>
-                
-
+                <div class="margin-div"></div>
 
         </section>
 
-        		<br><br><br><br><br><br><br><br><br><br>
 
 			<section id="contact">
 
-				<h1 class="some-heading">Ce-ai zice de o colaborare? Mă poți găsi la:</h1>
+				<h1 class="some-heading">Ce-ai zice să lucrăm împreună? Mă poți găsi la:</h1>
 
 				<div class="contact-div">
-					<a href="https://github.com/cristopher927" class="myButton" target="_blank">GitHub</a> 
+					<a href="https://github.com/cristopher927" id="profile-link" target="_blank">GitHub</a> 
 
 					<a href="https://www.freecodecamp.org/cristopher927" class="myButton" target="_blank">freeCodeCamp</a>
 
-					<h1>email: cristian_antonescu1992@yahoo.com</h1>
+
+           <h1 class="mail-link">email: cristian_antonescu1992@yahoo.com</h1>
 
 				</div>
-
-
 
 			</section>
 
@@ -161,16 +179,7 @@
 
 		</main>
 
-		<footer>
-			
-				<audio controls autoplay>
-					<source src="music/Halls_of_Valhalla.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
-
-				<p>Acum cântă: <strong>"Halls of Valhalla"</strong> de la <strong>Judas Priest</strong></p>
-				
-		</footer>
+		
 
 	</body>
 

@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
+    
+    <meta charset="utf-8"/>
 		<title>My portfolio webpage</title>
 
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
+
 		<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
@@ -20,7 +28,7 @@
 			<a href="#contact" class="navbar-link">Contact</a>
 
 			<div class="lang">
-				<p>Language / Limbă: </p>
+				<p>Language / Limbă: </p> <br>
 
 				<a href='#'><img src="pics/eng.jpg" alt="uk flag" width="25px" title="English" class="uk-link"></a>
 				<a href='ro-version/index.html'><img src="pics/ro-flag.png" alt="ro flag" width="25px" title="Română" class="ro-link"></a>
@@ -28,11 +36,10 @@
 
 		</nav>
 
-
 			<section id="welcome-section">
-				<h1> Hi. I'm Cristian Antonescu.</h1>
-				<h3>I preffer my coding diversified and responsive.</h3>
-				<h3>Welcome.</h3>
+				<h1 class="hello-heading"> Hi. I'm Cristian Antonescu.</h1>
+				<h3 class="coding-heading">I preffer my coding diversified and responsive.</h3>
+				<h3 class="welcome-heading">Welcome.</h3>
 			</section>
 
 		<main>
@@ -104,35 +111,46 @@
 
             <h1 class="some-heading">Check out some of my work:</h1>
 
-                <a href="https://github.com/cristopher927/motivational-web-app" class="project-tile" target="_blank">
+                <a href='https://github.com/cristopher927/motivational-web-app' target='_blank' class="project-tile" title="Here you will find some of the most inspiring and motivational quotes ever said, all in a beautiful quote generator app!">
+                  <div class="container-project">
+                    <img src="pics/quote-generator.jpg" alt="quote generator" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Motivational quote <br>generator app</div>
+                    </div>
+                  </div>
+                </a> 
 
-                        <img src="pics/quote-generator.jpg" alt="quote generator app pic" width="180px" height="155px" title="Here you will find some of the most inspiring and motivational quotes ever said, all in a beautiful quote generator app!"><br><h3>Motivational quote <br>generator app</h3>
-
+               <a href='https://github.com/cristopher927/technical-documentation-page-about-JavaScript' target='_blank' class="project-tile" title="A pretty well designed webpage that teaches the user a few basics about JavaScript">
+                  <div class="container-project">
+                    <img src="pics/documentation_page.png" alt="documentation page pic" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Documentation page <br> about JavaScript</div>
+                    </div>
+                  </div>
                 </a>
 
-                <a href="https://github.com/cristopher927/technical-documentation-page-about-JavaScript" class="project-tile" target="_blank" title="A pretty well designed webpage that teaches the user a few basics about JavaScript">
-
-                        <img src="pics/documentation_page.png" alt="documentation page pic" width="250px" height="155px"><br><h3>Documentation page <br> about JavaScript</h3>
-
+                <a href='https://github.com/cristopher927/tribute-page-to-Max-Tegmark' target='_blank' class="project-tile" title="A tribute page to the great cosmologist Max Tegmark">
+                  <div class="container-project">
+                    <img src="pics/tegmark.png" alt="tribute-page-to-Max-Tegmark pic" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Tribute page <br> to Max Tegmark</div>
+                    </div>
+                  </div>
                 </a>
 
-                <a href="https://github.com/cristopher927/tribute-page-to-Max-Tegmark" class="project-tile" target="_blank" title="A tribute page to the great cosmologist Max Tegmark">
-
-                        <img src="pics/tegmark.png" alt="tribute-page-to-Max-Tegmark pic" width="250px" height="155px"><br><h3>Tribute page <br> to Max Tegmark</h3>
-
+                 <a href='https://github.com/cristopher927/Survey-about-the-web' target='_blank' class="project-tile" title="A survey with lots of form elements, input types and other interesting stuff">
+                  <div class="container-project">
+                    <img src="pics/web.png" alt="Survey about the web pic" class="image-project">
+                    <div class="overlay">
+                      <div class="text-overlayed">Survey about the web</div>
+                    </div>
+                  </div>
                 </a>
 
-                <a href="https://github.com/cristopher927/Survey-about-the-web" class="project-tile" target="_blank" title="A survey with lots of form elements, input types and other interesting stuff">
-
-                        <img src="pics/web.png" alt="Survey about the web pic" width="250px" height="155px"><br><h3>Survey about the web</h3>
-
-                </a>
-                
-
+                <div class="margin-div"></div>
 
         </section>
 
-        		<br><br><br><br><br><br><br><br><br><br>
 
 			<section id="contact">
 
@@ -143,7 +161,8 @@
 
 					<a href="https://www.freecodecamp.org/cristopher927" class="myButton" target="_blank">freeCodeCamp</a>
 
-					<h1>email: cristian_antonescu1992@yahoo.com</h1>
+          <h1 class="mail-link">email: cristian_antonescu1992@yahoo.com</h1>
+
 
 				</div>
 
@@ -155,16 +174,7 @@
 
 		</main>
 
-		<footer>
-			
-				<audio controls autoplay>
-					<source src="music/Halls_of_Valhalla.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
-
-				<p>Now Playing: <strong>"Halls of Valhalla"</strong> by <strong>Judas Priest</strong></p>
-				
-		</footer>
+		
 
 	</body>
 
