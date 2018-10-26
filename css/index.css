@@ -5,6 +5,9 @@ html {
 
 body {
 	font-family: 'Fahkwang', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
 
 main {
@@ -13,27 +16,12 @@ main {
 	margin-bottom: 0;
 }
 
-form {
-	margin-top: 75px;
-}
-
-form textarea:focus {
-	background-color: lightblue;
-	border:1px solid blue;
-}
-
-form input:focus {
-	background-color: lightblue;
-	border:1px solid blue;
-}
-
 #contact {
 	 background-color: rgba(255, 255, 204, 0.7); 
 	 border-radius: 30px;
 	display: block;
-	transform: translate(0, 200px);
 	padding: 30px;
-	margin: 50px 30px 225px 30px;
+	margin: 50px 30px 80px 30px;
 	position: relative;
 }
 
@@ -123,6 +111,7 @@ form input:focus {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
 	background-color:#5cbf2a;
 }
+
 #profile-link:active {
 	position:relative;
 	top:1px;
@@ -138,12 +127,10 @@ form input:focus {
     background-color: #006400;
     background-image: linear-gradient(to bottom, rgba(0, 133, 20, 1), rgba(39, 225, 20, 1));
     color: white;
-    transform: translate(0, 45%);
+    margin:120px 0;
     padding: 30px;
-    display: inline-block;
+    display: block;
     width: 100%;
-    margin-top: 110px;
-    margin-bottom: 65px;
 }
 
 #projects h1 {
@@ -153,6 +140,11 @@ form input:focus {
 .project-tile {
 	display: inline-block;
 	width: 320px;
+	margin: 30px;
+}
+
+.project-tile:hover {
+	border:2px solid #008CBA;
 }
 
 .margin-div {
@@ -161,17 +153,12 @@ form input:focus {
 
 .container-project {
   position: relative;
-  width: 70%;
 }
 
 .image-project {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.image-project:hover {
-	border:2px solid blue;
 }
 
 .overlay {
@@ -218,7 +205,7 @@ form input:focus {
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;
-    height: 700px;
+    height: 1000px;
     position: relative;
 
 	background-color: black;
@@ -226,7 +213,7 @@ form input:focus {
     /*height: 580px;*/
     width: 100%;
     text-align: center;
-    
+    margin: 0;
 }
 
 .hello-heading {
@@ -238,6 +225,7 @@ form input:focus {
 }
 
 .coding-heading {
+	visibility: hidden;
 	color: white;
 	transform: translate(999px, 125px);
 	font-family: 'Oleo Script', cursive;
@@ -251,11 +239,13 @@ form input:focus {
 
 @keyframes coding {
 	from {
+		visibility: hidden;
 		transform: translate(999px, 125px);
 	}
 
 	to {
 		transform:translate(0, 125px);
+		visibility: visible;
 	}
 }
 
@@ -351,13 +341,14 @@ form input:focus {
 	font-size: 30px;
 	margin: 50px 0;
 	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	word-wrap: break-word;
 }
 
 
 @media only screen and (max-width: 480px) {
   #about-me {
     flex-direction: column;
-    margin: 0;
+    margin: 20px;
   }
 
   #navbar a {
@@ -373,8 +364,8 @@ form input:focus {
   }
 
   #contact {
-  	transform: translate(0, 300px);
-  	-ms-transform: translate(0, 300px); 
-    -webkit-transform: translate(0, 300px);
+  	transform: translate(0, 70px);
+  	-ms-transform: translate(0, 70px); 
+    -webkit-transform: translate(0, 70px);
 }
 
