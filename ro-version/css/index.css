@@ -141,10 +141,14 @@ main {
 	display: inline-block;
 	width: 320px;
 	margin: 30px;
+	opacity: 0.5;
+	transition: transform 0.5s;
 }
 
 .project-tile:hover {
 	border:2px solid #008CBA;
+	opacity: 1;
+	transform: scale(1.2);
 }
 
 .margin-div {

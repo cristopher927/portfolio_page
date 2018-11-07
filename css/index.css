@@ -141,10 +141,14 @@ main {
 	display: inline-block;
 	width: 320px;
 	margin: 30px;
+	opacity: 0.5;
+	transition: transform 0.5s;
 }
 
 .project-tile:hover {
 	border:2px solid #008CBA;
+	opacity: 1;
+	transform: scale(1.2);
 }
 
 .margin-div {
@@ -227,7 +231,7 @@ main {
 .coding-heading {
 	visibility: hidden;
 	color: white;
-	transform: translate(999px, 125px);
+	transform: translate(500px, 125px);
 	font-family: 'Oleo Script', cursive;
 	font-size: 32px;
 	text-shadow: 1px 1px 22px black, 0 0 25px blue, 0 0 25px darkblue;
@@ -240,7 +244,7 @@ main {
 @keyframes coding {
 	from {
 		visibility: hidden;
-		transform: translate(999px, 125px);
+		transform: translate(500px, 125px);
 	}
 
 	to {
